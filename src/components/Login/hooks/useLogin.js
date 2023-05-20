@@ -28,15 +28,11 @@ const useLogin = () => {
           }
         } catch (error) {
           setLoading(false)
-          Toaster("error",error?.response?.data?.message)
-            console.log(error)
-            
-        }
-        
+          Toaster("error",error?.response?.data?.message) 
+        }  
     }
 
   
-    
  return {
   onSubmit,
   loading
